@@ -1,55 +1,110 @@
-# Prerequisites
-*.d
+# ==============================
+# STM32 / Embedded Project
+# ==============================
 
-# Object files
+# ---------- Build output ----------
+Debug/
+Release/
+build/
+build_*/
+out/
+bin/
+obj/
+
+# Compiled files
 *.o
-*.ko
 *.obj
 *.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+*.axf
 *.hex
+*.bin
+*.map
+*.lst
+*.d
+*.su
 
-# Debug files
+# ---------- STM32CubeIDE ----------
+.cproject
+.project
+.settings/
+
+# Keep project configuration if desired
+# Uncomment if you DON'T want to track these:
+# *.ioc
+
+# ---------- STM32CubeMX ----------
+# Uncomment if you want to ignore generated CubeMX files:
+# *.ioc
+
+# ---------- ARM GCC ----------
+*.a
+*.lib
+
+# ---------- Debug / Trace ----------
+*.log
+*.trace
+*.launch
+
+# ---------- VS Code ----------
+.vscode/
+
+# Keep VS Code configuration if you want:
+# .vscode/settings.json
+# .vscode/launch.json
+# .vscode/tasks.json
+
+# ---------- Eclipse ----------
+.metadata/
+.recommenders/
+
+# ---------- CLion / JetBrains ----------
+.idea/
+*.iml
+
+# ---------- C/C++ ----------
 *.dSYM/
 *.su
-*.idb
-*.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# ---------- OS generated files ----------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# debug information files
-*.dwo
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ---------- Temporary files ----------
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# ---------- Documentation generated files ----------
+doxygen/html/
+doxygen/latex/
+
+# ---------- Test / Coverage ----------
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# ---------- Python (if used for scripts/tools) ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# ---------- Secrets / local configuration ----------
+.env
+.env.*
+!.env.example
